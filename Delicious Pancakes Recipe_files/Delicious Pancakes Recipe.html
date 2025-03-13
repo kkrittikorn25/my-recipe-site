@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width" ,="" initial-scale="1.0">
+    <title>Delicious Pancakes Recipe</title>
+</head>
+<body>
+    <div class="container" )="" <header="">
+            <h1>Delicious Panckaes Recipe</h1>
+            <img src="./pancakes.jpg" alt="Stack of fluffy pancakes">
+            <p>A quick and easy recipe for fluffy pancakes.</p>
+        
+        <article>
+            <section>
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>1 cup all-purpose flour</li>
+                    <li>2 tablespoons sugar</li>
+                    <li>2 teaspoons baking powder</li>
+                    <li>1 cup milk</li>
+                    <li>1 egg</li>
+                    <li>2 tablespoons melts butter</li>
+                    <li>1 teaspoon vanilla extract</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Instructions</h2>
+                <ol>
+                  <li>In a large bowl, whisk together the flour, sugar, baking powder, and salt.</li>
+                  <li>In another bowl, beat the egg and then mix in the milk, melted butter, and vanilla extract.</li>
+                  <li>Pour the wet ingredients into the dry ingredients and stir until just combined. Avoid overmixing to keep the pancakes fluffy.</li>
+                  <li>Heat a lightly oiled griddle or frying pan over medium heat.</li>
+                  <li>Scoop 1/4 cup of batter for each pancake onto the 
+griddle. Cook until bubbles form on the surface and the edges start to 
+look dry, then flip and cook until golden brown.</li>
+                  <li>Serve warm with your favorite toppings.</li>
+                </ol>
+              </section>
+        </article>
+        <footer>
+            <p>© 2025 Delicious recipe site</p>
+        </footer>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
